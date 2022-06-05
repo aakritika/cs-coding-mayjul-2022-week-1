@@ -10,44 +10,175 @@
         <!--css in doc styling-->
         <style>
          .btn-primary {
-             background-color: #7331F8;
-             border-color: #7331F8;
+             background-color: coral;
+             border-color: coral;
          }
          .btn-primary:hover {
-             background-color: #7209b7;
-             border-color: #7209b7;
+             background-color: #30D5C8;
+             border-color: #30D5C8;
          }
          .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
-             background-color: #7331F8;
+             background-color: coral;
          }
          .nav-link {
-             color: #7331F8;
+             color: black;
          }
          .nav-link:hover {
              color: black;
          }
          .nav-link.active:hover {
-             background-color: #7209b7;
+             background-color: #30D5C8;
          }
          .pb-2 {
-             color:#7209b7
+             color: orange;
          }
-        .my-5 {
-            background-color: #bbd0ff;
-        }
+    
+       
+
         .fw-bold {
-            color: #7209b7;
+            color: coral;
         }
-        .img-carousel {
+
+        .my-5 {
+          background: linear-gradient(0deg, rgba(11, 11, 11, 0.7), rgba(22, 21, 22, 0.7)), url(https://images.unsplash.com/photo-1618221381711-42ca8ab6e908?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1932&q=80) center;
+        }
+        .lead {
+          color: white;
+        }
+        .display-5 {
+          color: white;
+        }
+        .btn-outline-secondary {
+          color: white;
+        }
+        .btn-outline-secondary:hover {
+          background-color: #30D5C8;
+        }
+        .card {
+          display: flex;
+        }
+        .d-flex.flex-column.h-100.p-5.pb-3.text-white.text-shadow-1{
+          background: linear-gradient(0deg, rgba(11, 11, 11, 0.501), rgba(22, 21, 22, 0.357)) center;
+        }
+        .card-body {
           text-align: center;
-          padding: 10px 10px 10px 10px;
         }
-       .img-carousel img {
-         border: black 2px solid;
-       }
+        #fs-frm input,
+#fs-frm select,
+#fs-frm textarea,
+#fs-frm fieldset,
+#fs-frm optgroup,
+#fs-frm label,
+#fs-frm #card-element:disabled {
+  font-family: inherit;
+  font-size: 100%;
+  color: inherit;
+  border: none;
+  border-radius: 0;
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+#fs-frm label,
+#fs-frm legend,
+#fs-frm ::placeholder {
+  font-size: .825rem;
+  margin-bottom: .5rem;
+  padding-top: .2rem;
+  display: flex;
+  align-items: baseline;
+}
+
+/* border, padding, margin, width */
+#fs-frm input,
+#fs-frm select,
+#fs-frm textarea,
+#fs-frm #card-element {
+  border: 1px solid rgba(0,0,0,0.2);
+  background-color: rgba(255,255,255,0.9);
+  padding: .75em 1rem;
+  margin-bottom: 1.5rem;
+}
+#fs-frm input:focus,
+#fs-frm select:focus,
+#fs-frm textarea:focus {
+  background-color: white;
+  outline-style: solid;
+  outline-width: thin;
+  outline-color: gray;
+  outline-offset: -1px;
+}
+#fs-frm [type="text"],
+#fs-frm [type="email"] {
+  width: 100%;
+}
+#fs-frm [type="button"],
+#fs-frm [type="submit"],
+#fs-frm [type="reset"] {
+  width: auto;
+  cursor: pointer;
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+}
+#fs-frm [type="button"]:focus,
+#fs-frm [type="submit"]:focus,
+#fs-frm [type="reset"]:focus {
+  outline: none;
+}
+#fs-frm [type="submit"],
+#fs-frm [type="reset"] {
+  margin-bottom: 0;
+}
+#fs-frm select {
+  text-transform: none;
+}
+
+#fs-frm [type="checkbox"] {
+  -webkit-appearance: checkbox;
+  -moz-appearance: checkbox;
+  appearance: checkbox;
+  display: inline-block;
+  width: auto;
+  margin: 0 .5em 0 0 !important;
+}
+
+#fs-frm [type="radio"] {
+  -webkit-appearance: radio;
+  -moz-appearance: radio;
+  appearance: radio;
+}
+
+/* address, locale */
+#fs-frm fieldset.locale input[name="city"],
+#fs-frm fieldset.locale select[name="state"],
+#fs-frm fieldset.locale input[name="postal-code"] {
+  display: inline;
+}
+#fs-frm fieldset.locale input[name="city"] {
+  width: 52%;
+}
+#fs-frm fieldset.locale select[name="state"],
+#fs-frm fieldset.locale input[name="postal-code"] {
+  width: 20%;
+}
+#fs-frm fieldset.locale input[name="city"],
+#fs-frm fieldset.locale select[name="state"] {
+  margin-right: 3%;
+}
+.contact-us {
+  margin-top: 50px;
+  font-size: larger;
+  font-weight: 500;
+  font: italic;
+  text-align: center;
+}
         </style>
         
-        
+       <title>Anuraya</title> 
     </head>
     <body>
         
@@ -147,108 +278,80 @@
           </div>
 
         <!-- Hero -->
-        <div class="px-4 py-5 my-5 text-center">
-            <img class="d-block mx-auto mb-4" src="./logo.svg" alt="" width="72" height="57">
-            <h1 class="display-5 fw-bold">Centered hero</h1>
-            <div class="col-lg-6 mx-auto">
-              <p class="lead mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
-              <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-                <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Primary button</button>
-                <button type="button" class="btn btn-outline-secondary btn-lg px-4">Secondary</button>
-              </div>
-            </div>
-          </div>
-
-        <!--image carousel-->
-        <div class="container img-carousel">
-          <div class="row">
-            <div class="col-lg-4" bg-> 
-              <img class="img-fluid imgc" src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fHRyYXZlbHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60 /">Travel
-            </div>
-            <div class="col-lg-4">
-              <img class="img-fluid imgc" src="https://images.unsplash.com/photo-1507608616759-54f48f0af0ee?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8dHJhdmVsfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60 /">
-              Travel
-            </div>
-            <div class="col-lg-4">
-              <img class="img-fluid imgc" src="https://images.unsplash.com/photo-1568849676085-51415703900f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fHRyYXZlbHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60 /">
-              Travel
+        <div class="my-5 px-4 py-5 text-center">
+          <img class="d-block mx-auto mb-4">
+          <h1 class="display-5 fw-bold">Anuraya</h1>
+          <div class="col-lg-6 mx-auto">
+            <p class="lead mb-4">Creating a beautiful home doesn't have to be a herculean task. You too can have a personalized home full of warmth with these easy DIY decor ideas.</p>
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+              <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Get Ideas</button>
+              <button type="button" class="btn btn-outline-secondary btn-lg px-4">About</button>
             </div>
           </div>
         </div>
 
-
-        <!-- Features -->
-        <div class="container px-4 py-5" id="icon-grid">
-            <h2 class="pb-2 border-bottom">Icon grid</h2>
-        
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
-              <div class="col d-flex align-items-start">
-                <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#bootstrap"></use></svg>
-                <div>
-                  <h4 class="fw-bold mb-0">Featured title</h4>
-                  <p>Paragraph of text beneath the heading to explain the heading.</p>
+           <!-- cards -->
+           <div class="container">
+             <div class="row">
+                <div class="col-lg-4 cl1">
+                  <div class="card h-100" style="width: 18rem;">
+                    <img class="card-img-top" src="https://images.squarespace-cdn.com/content/v1/59db9a94f5e2317170ea2745/1555529505974-QLL9WBMFQUO18Y7PS5VA/Vases+Anuraya.jpg?format=750w" alt="Card image cap">
+                    <div class="card-body">
+                    <h5 class="card-title">Outdoor Decor Ideas</h5>
+                    <p class="card-text">Give your patio, deck, or yard a dose of designer style with these clever ideas for the great outdoors.</p>
+                    <a href="#" class="btn btn-primary">Get Decor Ideas</a>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div class="col d-flex align-items-start">
-                <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#cpu-fill"></use></svg>
-                <div>
-                  <h4 class="fw-bold mb-0">Featured title</h4>
-                  <p>Paragraph of text beneath the heading to explain the heading.</p>
+                <div class="col-lg-4 cl2">
+                  <div class="card h-100" style="width: 18rem;">
+                    <img class="card-img-top" src="https://images.squarespace-cdn.com/content/v1/59db9a94f5e2317170ea2745/1555528794121-7RW26B2WFEMDBR1HA4TJ/Decor+7.jpeg?format=750w" alt="Card image cap">
+                    <div class="card-body">
+                    <h5 class="card-title">Living Room Decor Ideas</h5>
+                    <p class="card-text">Make the coziest spot in your home everyone's favorite with our inspiring styling tips.</p>
+                    <a href="#" class="btn btn-primary">Get Decor Ideas</a>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div class="col d-flex align-items-start">
-                <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#calendar3"></use></svg>
-                <div>
-                  <h4 class="fw-bold mb-0">Featured title</h4>
-                  <p>Paragraph of text beneath the heading to explain the heading.</p>
-                </div>
-              </div>
-              <div class="col d-flex align-items-start">
-                <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#home"></use></svg>
-                <div>
-                  <h4 class="fw-bold mb-0">Featured title</h4>
-                  <p>Paragraph of text beneath the heading to explain the heading.</p>
-                </div>
-              </div>
-              <div class="col d-flex align-items-start">
-                <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#speedometer2"></use></svg>
-                <div>
-                  <h4 class="fw-bold mb-0">Featured title</h4>
-                  <p>Paragraph of text beneath the heading to explain the heading.</p>
-                </div>
-              </div>
-              <div class="col d-flex align-items-start">
-                <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#toggles2"></use></svg>
-                <div>
-                  <h4 class="fw-bold mb-0">Featured title</h4>
-                  <p>Paragraph of text beneath the heading to explain the heading.</p>
-                </div>
-              </div>
-              <div class="col d-flex align-items-start">
-                <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#geo-fill"></use></svg>
-                <div>
-                  <h4 class="fw-bold mb-0">Featured title</h4>
-                  <p>Paragraph of text beneath the heading to explain the heading.</p>
-                </div>
-              </div>
-              <div class="col d-flex align-items-start">
-                <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#tools"></use></svg>
-                <div>
-                  <h4 class="fw-bold mb-0">Featured title</h4>
-                  <p>Paragraph of text beneath the heading to explain the heading.</p>
+                <div class="col-lg-4 cl3">
+                  <div class="card h-100" style="width: 18rem;">
+                    <img class="card-img-top" src="https://images.squarespace-cdn.com/content/v1/59db9a94f5e2317170ea2745/1555528833380-ICLN1PPDMFBS0XMEFLK3/Decor+10.jpeg?format=750w" alt="Card image cap">
+                    <div class="card-body">
+                    <h5 class="card-title">Dining Room Decor Ideas</h5>
+                    <p class="card-text">Make the dining spot in your home everyone's favorite space with our everyday and easy styling tips.</p>
+                    <a href="#" class="btn btn-primary">Get Decor Ideas</a>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
+        <!--leadform-->
+        <div class="container">
+          <p class="contact-us">Home Design may sound like an ominous term to some people, who have difficulty trying to apply it in their homes. But let me tell you, it is not as complicated as we may think. 
+
+            <br/> After all a home is a sanctuary for the people inhabiting it, and has to incorporate and include elements which are close to their hearts.</p>
+          <p class="contact-us">Contact Us For A Qoute For Interior Designing</p>
+        <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/{form_id}" method="post">
+          <fieldset id="fs-frm-inputs">
+            <label for="full-name">Full Name</label>
+            <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
+            <label for="email-address">Email Address</label>
+            <input type="email" name="_replyto" id="email-address" placeholder="Email Address" required="">
+            <label for="message">Message</label>
+            <textarea rows="5" name="message" id="message" placeholder="Contact us for a free quote today" required=""></textarea>
+            <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+          </fieldset>
+          <input type="submit" value="Submit">
+        </form>
+      </div>
 
         <!-- Footer -->
         <div class="container">
             <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
               <div class="col-md-4 d-flex align-items-center">
                 <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
-                  <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
                 </a>
-                <span class="mb-3 mb-md-0 text-muted">© 2022 Company, Inc</span>
+                <span class="mb-3 mb-md-0 text-muted">© 2022 Anuraya, Inc</span>
               </div>
           
               <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
